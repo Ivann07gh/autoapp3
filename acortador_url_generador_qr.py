@@ -20,7 +20,7 @@ st.header("ESCURÇADOR D'URLs")
 
 st.text("""
 Introduiu l'URL dins el requadre proporcionat. Posteriorment, presioneu el botó
-"Genera una URL Escurçada" i automàticament serà retornada l'URL escurçada.
+"Genera una URL Escurçada" i automàticament serà retornada la URL escurçada.
 """)
 
 url = st.text_input("Introdueix la URL")
