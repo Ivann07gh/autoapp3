@@ -19,12 +19,12 @@ st.set_page_config(
 st.header("ESCURÇADOR D'URLs")
 
 st.text("""
-Introduiu l'URL dins el requadre proporcionat. Posteriorment, presioneu el botó
-"Genera una URL Escurçada" i automàticament serà retornada la URL escurçada.
+Introduïu l'URL dins el requadre proporcionat. Posteriorment, pressioneu el botó
+"Genera un URL Escurçat" i automàticament serà retornat l'URL escurçat.
 """)
 
-url = st.text_input("Introdueix la URL")
-if st.button("Genera una URL Escurçada"):
+url = st.text_input("Introdueix l'URL")
+if st.button("Genera un URL Escurçat"):
     st.write(
         "URL Escurçada amb èxit: ",
         shorten_url(url)
@@ -53,12 +53,12 @@ def generate_qr_code(url, output_qr):
 st.header("GENERADOR DE CODIS QR")
 
 st.text("""
-Introduiu l'URL dins el requadre proporcionat. Posteriorment, presioneu el botó
+Introduïu l'URL dins el requadre proporcionat. Posteriorment, pressioneu el botó
 "Genera el teu Codi QR" i de forma automàtica serà retornat un codi QR enllaçat
-a la URL proporcionada.
+a l'URL proporcionat.
 """)
 
-url = st.text_input("Introdueix la teva URL")
+url = st.text_input("Introdueix el teu URL")
 
 if st.button("Genera el teu Codi QR"):
     generate_qr_code(url, output_qr)
